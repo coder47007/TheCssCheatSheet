@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Cheat Sheet</h1>
+        <p>A comprehensive CSS cheat sheet with examples, properties, and techniques.</p>
+    </header>
+
+    <!-- Page 1 -->
+    <section id="css-introduction">
+        <h2>Introduction to CSS</h2>
+        <p><strong>What is CSS?</strong> CSS (Cascading Style Sheets) is used to style the presentation of web pages, including layout, colors, and fonts.</p>
+        <p><strong>CSS Syntax:</strong></p>
+        <pre><code>selector {
+    property: value;
+}</code></pre>
+
+        <p><strong>Example:</strong></p>
+        <pre><code>h1 {
+    color: blue;
+    font-size: 24px;
+}</code></pre>
+    </section>
+
+    <section id="selectors">
+        <h2>CSS Selectors</h2>
+        <h3>Element Selector</h3>
+        <pre><code>p {
+    color: green;
+}</code></pre>
+
+        <h3>Class Selector</h3>
+        <pre><code>.class-name {
+    font-size: 18px;
+}</code></pre>
+
+        <h3>ID Selector</h3>
+        <pre><code>#id-name {
+    color: red;
+}</code></pre>
+
+        <h3>Universal Selector</h3>
+        <pre><code>* {
+    margin: 0;
+    padding: 0;
+}</code></pre>
+    </section>
+
+    <section id="box-model">
+        <h2>The CSS Box Model</h2>
+        <p>The box model describes the rectangular boxes generated for elements in the document tree, consisting of content, padding, border, and margin.</p>
+        <pre><code>.box {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin: 15px;
+}</code></pre>
+    </section>
+
+    <section id="background">
+        <h2>CSS Backgrounds</h2>
+        <p>Background properties define the background color, image, size, and more.</p>
+        <h3>Background Color</h3>
+        <pre><code>body {
+    background-color: #f4f4f4;
+}</code></pre>
+
+        <h3>Background Image</h3>
+        <pre><code>.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+}</code></pre>
+    </section>
+
+    <!-- Page 2 -->
+    <section id="text-style">
+        <h2>Text Styling</h2>
+        <h3>Font Properties</h3>
+        <pre><code>p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}</code></pre>
+
+        <h3>Text Align</h3>
+        <pre><code>h1 {
+    text-align: center;
+}</code></pre>
+
+        <h3>Text Transform</h3>
+        <pre><code>h2 {
+    text-transform: uppercase;
+}</code></pre>
+    </section>
+
+    <section id="pseudo-classes">
+        <h2>Pseudo-Classes</h2>
+        <p>Pseudo-classes define the special state of an element.</p>
+        <h3>Hover</h3>
+        <pre><code>a:hover {
+    color: red;
+}</code></pre>
+
+        <h3>Focus</h3>
+        <pre><code>input:focus {
+    border-color: blue;
+}</code></pre>
+
+        <h3>First Child</h3>
+        <pre><code>p:first-child {
+    font-weight: bold;
+}</code></pre>
+    </section>
+
+    <section id="borders">
+        <h2>Borders</h2>
+        <h3>Border Properties</h3>
+        <pre><code>.box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}</code></pre>
+    </section>
+
+    <section id="layout">
+        <h2>Layout Techniques</h2>
+        <h3>Flexbox</h3>
+        <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+    </section>
+
+    <!-- Page 3 -->
+    <section id="colors">
+        <h2>CSS Colors</h2>
+        <h3>Named Colors</h3>
+        <pre><code>p {
+    color: aqua;
+}</code></pre>
+
+        <h3>RGBA Colors</h3>
+        <pre><code>div {
+    background-color: rgba(0, 0, 255, 0.5);
+}</code></pre>
+    </section>
+
+    <section id="shapes">
+        <h2>Creating Shapes</h2>
+        <h3>Circle</h3>
+        <pre><code>.circle {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+}</code></pre>
+
+        <h3>Triangle</h3>
+        <pre><code>.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+}</code></pre>
+    </section>
+
+    <section id="transitions">
+        <h2>Transitions</h2>
+        <pre><code>button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}</code></pre>
+    </section>
+
+    <section id="clip-path">
+        <h2>CSS Clip-Path</h2>
+        <pre><code>.clip {
+    clip-path: circle(50% at 50% 50%);
+}</code></pre>
+    </section>
+
+    <section id="filters">
+        <h2>CSS Filters</h2>
+        <h3>Blur</h3>
+        <pre><code>img {
+    filter: blur(5px);
+}</code></pre>
+    </section>
+
+    <section id="visibility">
+        <h2>Visibility</h2>
+        <h3>Control Element Visibility</h3>
+        <pre><code>.hidden-element {
+    visibility: hidden;
+}</code></pre>
+    </section>
+
+    <section id="overflow">
+        <h2>Overflow</h2>
+        <h3>Handle Overflow Content</h3>
+        <pre><code>.content-box {
+    overflow: auto;
+}</code></pre>
+    </section>
+
+    <section id="z-index">
+        <h2>Z-Index</h2>
+        <h3>Control Element Stacking</h3>
+        <pre><code>.overlay {
+    z-index: 10;
+}</code></pre>
+    </section>
+
+    <footer>
+        <p>Created to ease your work - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
